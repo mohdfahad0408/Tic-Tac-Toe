@@ -9,7 +9,8 @@ let clickcount=0;
 
 const showWinner=(winner)=>{
     msg.innerText=`Congratulations winner is ${winner}`;
-    msgContainer.classList.remove("hide")
+    msgContainer.classList.remove("hide");
+    clickcount=0
 }
 
 
@@ -70,6 +71,7 @@ const checkWinner=()=>{
 const draw=()=>{
     msg.innerText="Game is DRAW!!!"
     msgContainer.classList.remove("hide")
+    clickcount=0;
 }
 const resetGame=()=>{
     turnO=true;
